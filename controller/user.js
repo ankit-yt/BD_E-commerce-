@@ -9,6 +9,7 @@ require("dotenv").config()
 const Razorpay = require('razorpay');
 const paymentModel = require('../models/payment')
 const orderModel = require('../models/order')
+const productModel = require('../models/product')
 
 var instance = new Razorpay({
   key_id: process.env.YOUR_KEY_ID,
