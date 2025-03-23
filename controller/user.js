@@ -1,6 +1,7 @@
 const userModel = require("../models/user")
 const jwt = require("jsonwebtoken")
-const bcrypt = require("bcrypt")
+const bcrypt = require('bcryptjs'); // Change from 'bcrypt' to 'bcryptjs'
+
 require("dotenv").config
 const blackListModel = require("../models/blackList")
 require("dotenv").config()
