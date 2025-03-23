@@ -1,9 +1,9 @@
 const cloudinary = require("cloudinary").v2;
-
+require("dotenv").config()
 cloudinary.config({
-  cloud_name: "do5bugngn",
-  api_key: "272686899287346",
-  api_secret: "ZvIavKPJA89HkbTc44OAXv6nhZk",  // Replace with actual API secret
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUD_API_KEY,
+  api_secret: process.env.CLOUD_API_SECRET,  // Replace with actual API secret
   secure: true,
 });
 

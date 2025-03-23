@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
 require("dotenv").config
 const blackListModel = require("../models/blackList")
-require("dotenv").config
+require("dotenv").config()
 
 const Razorpay = require('razorpay');
 const paymentModel = require('../models/payment')
